@@ -13,14 +13,15 @@ MORSE_CODE_DICT = {'A': '.-', 'B': '-...',
                    '0': '-----', ', ': '--..--', '.': '.-.-.-',
                    '?': '..--..', '/': '-..-.', '-': '-....-',
                    '(': '-.--.', ')': '-.--.-'}
+## can use a reversed dictionary from MORSE_CODE_DICT to decode code_text
+# def reverse_dict(DICT):
+#     reversed = {}
+#     for key,value in DICT.items():
+#         reversed[value] = key
+#     return reversed
+# print(reverse_dict(MORSE_CODE_DICT))
 
-def reverse_dict(DICT):
-    reversed = {}
-    for key,value in DICT.items():
-        reversed[value] = key
-    return reversed
-print(reverse_dict(MORSE_CODE_DICT))
-
+##or reverse with dict comprehension
 # reversed =  { values : keys for keys ,values in MORSE_CODE_DICT.items()}
 # print(reversed)
 
